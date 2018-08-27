@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: pekar
-  Date: 27.08.18
-  Time: 19:31
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+    <form action="" method="post">
+      <input name="from" alt="from city" type="text">
+      <br/>
+      <input type="text" name="to" alt="to city">
+      <br/>
+      <select name="type" id="type">
+        <option>Crowflight</option>
+        <option>Distance Matrix</option>
+      </select>
+    </form>
   </body>
 </html>
