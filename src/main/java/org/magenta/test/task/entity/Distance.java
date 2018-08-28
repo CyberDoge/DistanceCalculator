@@ -3,7 +3,7 @@ package org.magenta.test.task.entity;
 public class Distance {
     private String fromCity;
     private String toCity;
-    private Double distance;
+    private Integer distance;
 
     @Override
     public String toString() {
@@ -14,7 +14,7 @@ public class Distance {
                 '}';
     }
 
-    public Distance(String fromCity, String toCity, Double distance) {
+    public Distance(String fromCity, String toCity, Integer distance) {
         this.fromCity = fromCity;
         this.toCity = toCity;
         this.distance = distance;
@@ -36,11 +36,11 @@ public class Distance {
         this.toCity = toCity;
     }
 
-    public Double getDistance() {
+    public Integer getDistance() {
         return distance;
     }
 
-    public void setDistance(Double distance) {
+    public void setDistance(Integer distance) {
         this.distance = distance;
     }
 }
