@@ -1,10 +1,10 @@
 package org.magenta.test.task.dao;
 
-import org.magenta.test.task.entity.City;
+import org.magenta.test.task.entity.Distance;
 
 import java.sql.SQLException;
 
 public interface DistanceDao {
-    City findCityByName(String name) throws SQLException;
     Integer findDistance(String from, String to) throws SQLException;
+    void save(Distance distance) throws SQLException;
 }

@@ -11,7 +11,7 @@ public class DbUtil {
 
     private static final BasicDataSource dataSource = new BasicDataSource();
 
-    public static void init(File propertiesFile) throws IOException, ClassNotFoundException {
+    public static void init() throws IOException, ClassNotFoundException {
         Properties prop = new Properties();
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
         InputStream resourceStream = loader.getResourceAsStream("database.properties");

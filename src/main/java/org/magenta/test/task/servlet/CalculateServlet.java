@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Map;
 
 @WebServlet("calculate")
-public class IndexServlet extends HttpServlet {
+public class CalculateServlet extends HttpServlet {
     private CalculateService calculateService;
     @Override
     public void init() throws ServletException {
@@ -20,7 +20,7 @@ public class IndexServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        req.getRequestDispatcher("calculate.jsp").forward(req, resp);
     }
 
     @Override
@@ -33,9 +33,9 @@ public class IndexServlet extends HttpServlet {
         if(type.equals("Crowflight"))
             result = calculateService.crowflightFormula(from, to);
         else if (type.equals("Distance Matrix"))
-            result = calculateService.distanceMatrix(from, to);
+            result = Double.valueOf(calculateService.distanceMatrix(from, to));
         else throw new IOException();
-        resp.getWriter().write(String.valueOf(result));
+            resp.getWriter().write(String.valueOf(result));
         resp.getWriter().close();
     }
 }

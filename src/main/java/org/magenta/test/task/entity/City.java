@@ -1,11 +1,21 @@
 package org.magenta.test.task.entity;
 
 public class City {
+    private Integer id;
     private String name;
     private Float latitude;
     private Float longitude;
 
-    public City(String name, Float latitude, Float longitude) {
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public City(Integer id, String name, Float latitude, Float longitude) {
+        this.id = id;
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -14,7 +24,8 @@ public class City {
     @Override
     public String toString() {
         return "City{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
                 '}';
