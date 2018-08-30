@@ -1,6 +1,9 @@
 package org.magenta.test.task.service;
 
+import java.util.List;
+
 public interface CalculateService {
-    Double crowflightFormula(String from, String to);
-    Integer distanceMatrix(String from, String to);
+    List<Integer> crowflightFormula(String[] from, String[] to);
+    List<Integer> distanceMatrix(String[] from, String[] to);
+    List<Integer> allCalculations(String from, String to);
 }

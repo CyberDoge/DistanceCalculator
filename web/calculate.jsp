@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>Calculate</title>
     <script href="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>

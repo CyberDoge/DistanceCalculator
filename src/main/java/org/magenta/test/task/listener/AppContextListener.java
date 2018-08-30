@@ -24,7 +24,7 @@ public class AppContextListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
-            DbUtil.init(null);
+            DbUtil.init();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
