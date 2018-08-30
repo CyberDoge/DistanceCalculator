@@ -22,7 +22,10 @@ public class CalculateServiceImpl implements CalculateService {
 
     private static List<City> fillInList(String[] list, CityDao cityDao) throws SQLException {
         List<City> cities = new ArrayList<>(list.length);
-        for (String name : list) {
+
+        for (int i = 0; i < list.length; i++) {
+            String name = list[i].substring(0, 1).toUpperCase() + list[i].toLowerCase().substring(1);
+            list[i] = name;
             City city = cityDao.findCityByName(name);
             assert city != null;
             cities.add(city);
@@ -73,8 +76,8 @@ public class CalculateServiceImpl implements CalculateService {
     public List<Integer> allCalculations(String from, String to) {
         String[] fromList = from.split(", ");
         String[] toList = to.split(", ");
-        List<Integer> result = distanceMatrix(fromList, toList);
-        result.addAll(crowflightFormula(fromList, toList));
+        List<Integer> result = crowflightFormula(fromList, toList);
+        result.addAll(distanceMatrix(fromList, toList));
         return result;
     }
 }

@@ -1,4 +1,4 @@
-package util;
+package org.magenta.test.task.util;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 

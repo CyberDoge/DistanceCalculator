@@ -1,5 +1,11 @@
 package org.magenta.test.task.entity;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "distance")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Distance {
     private String fromCity;
     private String toCity;

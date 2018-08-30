@@ -1,7 +1,7 @@
 package org.magenta.test.task.dao;
 
 import org.magenta.test.task.entity.City;
-import util.DbUtil;
+import org.magenta.test.task.util.DbUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

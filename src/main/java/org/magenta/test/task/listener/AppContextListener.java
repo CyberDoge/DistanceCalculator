@@ -5,7 +5,9 @@ import org.magenta.test.task.dao.CityDaoImpl;
 import org.magenta.test.task.dao.DistanceDao;
 import org.magenta.test.task.dao.DistanceDaoImpl;
 import org.magenta.test.task.service.CalculateServiceImpl;
-import util.DbUtil;
+import org.magenta.test.task.service.UploadFileService;
+import org.magenta.test.task.service.UploadFileServiceImpl;
+import org.magenta.test.task.util.DbUtil;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -32,6 +34,8 @@ public class AppContextListener implements ServletContextListener {
         CityDao cityDao = new CityDaoImpl();
         CalculateServiceImpl calculateService = new CalculateServiceImpl(distanceDao, cityDao);
         servletContextEvent.getServletContext().setAttribute("calculateService", calculateService);
+        UploadFileService uploadFileService = new UploadFileServiceImpl(distanceDao, cityDao);
+        servletContextEvent.getServletContext().setAttribute("uploadFileService", uploadFileService);
 
     }
 
