@@ -12,7 +12,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
 import java.sql.SQLException;
-import java.util.List;
 
 public class UploadFileServiceImpl implements UploadFileService {
     private DistanceDao distanceDao;
@@ -25,38 +24,24 @@ public class UploadFileServiceImpl implements UploadFileService {
 
     @Override
     public void saveToDb(InputStream inputStream) {
+
         try {
-            for (City city : citiesFromXml(inputStream)) {
-                assert city != null;
-                cityDao.save(city);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (JAXBException e) {
-            e.printStackTrace();
-            /*
-            try {
-                for (Distance distance : distanceFromXml(inputStream)) {
+            JAXBContext context = JAXBContext.newInstance(Cities.class, Distances.class);
+            Unmarshaller un = context.createUnmarshaller();
+            Object entity =  un.unmarshal(inputStream);
+            if (entity instanceof Cities) {
+                for (City city : ((Cities)entity).cityList) {
+                    assert city != null;
+                    cityDao.save(city);
+                }
+            }else if (entity instanceof Distances) {
+                for (Distance distance : ((Distances)entity).distanceList) {
                     assert distance != null;
                     distanceDao.save(distance);
                 }
-            } catch (JAXBException | SQLException e1) {
-                e1.printStackTrace();
-            }*/
+            } else throw new JAXBException("Not valid entity");
+        } catch (SQLException | JAXBException e) {
+            e.printStackTrace();
         }
-    }
-
-    private static List<City> citiesFromXml(InputStream inputStream) throws JAXBException {
-        JAXBContext context = JAXBContext.newInstance(Cities.class);
-        Unmarshaller un = context.createUnmarshaller();
-        Cities cities = (Cities) un.unmarshal(inputStream);
-        return cities.cityList;
-    }
-
-    private static List<Distance> distanceFromXml(InputStream inputStream) throws JAXBException {
-        JAXBContext context = JAXBContext.newInstance(Distances.class);
-        Unmarshaller un = context.createUnmarshaller();
-        Distances distances = (Distances) un.unmarshal(inputStream);
-        return distances.getDistances();
     }
 }

@@ -13,13 +13,8 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Distances {
     @XmlElement(name = "distance")
-    private List<Distance> distances = null;
+    public List<Distance> distanceList;
 
-    public List<Distance> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(List<Distance> distances) {
-        this.distances = distances;
+    public Distances() {
     }
 }

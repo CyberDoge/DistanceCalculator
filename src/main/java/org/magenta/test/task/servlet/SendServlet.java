@@ -33,5 +33,6 @@ public class SendServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Part filePart = req.getPart("file");
         uploadFileService.saveToDb(filePart.getInputStream());
+        resp.setStatus(200);
     }
 }

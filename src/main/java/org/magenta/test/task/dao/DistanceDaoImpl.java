@@ -17,7 +17,9 @@ public class DistanceDaoImpl implements DistanceDao {
                     "WHERE (from_city = @from_city OR from_city = @to_city) " +
                     "AND (to_city = @to_city OR to_city = @from_city) " +
                     "AND (to_city != from_city)";
-    private static final String SAVE_DISTANCE_TO_DB_QUERY = "INSERT INTO distance VALUES (?, ?, ?)";
+
+    private static final String SAVE_DISTANCE_TO_DB_QUERY = "INSERT INTO distance VALUES ((SELECT city_id " +
+            "FROM city WHERE name=?), (SELECT city_id FROM city WHERE name=?), ?)";
 
     @Override
     public Integer findDistance(String from, String to) throws SQLException {
@@ -43,7 +45,7 @@ public class DistanceDaoImpl implements DistanceDao {
             statement.setString(1, distance.getFromCity());
             statement.setString(2, distance.getToCity());
             statement.setInt(3, distance.getDistance());
-            assert statement.execute();
+            statement.executeUpdate();
         }
     }
 }

@@ -4,9 +4,7 @@ import org.magenta.test.task.dao.CityDao;
 import org.magenta.test.task.dao.CityDaoImpl;
 import org.magenta.test.task.dao.DistanceDao;
 import org.magenta.test.task.dao.DistanceDaoImpl;
-import org.magenta.test.task.service.CalculateServiceImpl;
-import org.magenta.test.task.service.UploadFileService;
-import org.magenta.test.task.service.UploadFileServiceImpl;
+import org.magenta.test.task.service.*;
 import org.magenta.test.task.util.DbUtil;
 
 import javax.servlet.ServletContextEvent;
@@ -17,12 +15,6 @@ import java.sql.SQLException;
 
 @WebListener
 public class AppContextListener implements ServletContextListener {
-
-    /**    todo list
-     * check if city name valid
-     * exception/assertions in dif place
-     *
-     */
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
@@ -36,6 +28,8 @@ public class AppContextListener implements ServletContextListener {
         servletContextEvent.getServletContext().setAttribute("calculateService", calculateService);
         UploadFileService uploadFileService = new UploadFileServiceImpl(distanceDao, cityDao);
         servletContextEvent.getServletContext().setAttribute("uploadFileService", uploadFileService);
+        CityService cityService = new CityServiceImpl(cityDao);
+        servletContextEvent.getServletContext().setAttribute("cityService", cityService);
 
     }
 

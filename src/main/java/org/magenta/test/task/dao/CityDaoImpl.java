@@ -3,16 +3,18 @@ package org.magenta.test.task.dao;
 import org.magenta.test.task.entity.City;
 import org.magenta.test.task.util.DbUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CityDaoImpl implements CityDao {
     private static final String FIND_CITY_BY_NAME_QUERY =
             "SELECT city_id, latitude, longitude FROM city WHERE name=?";
     private static final String SAVE_CITY_TO_DB_QUERY =
             "INSERT INTO city (name, latitude, longitude) VALUES (?, ?, ?)";
+    private static final String FIND_CITIES_ID_NAME_QUERY =
+            "SELECT city_id, name FROM city";
+
     @Override
     public void save(City city) throws SQLException {
         try (Connection connection = DbUtil.getConnection();
@@ -36,6 +38,19 @@ public class CityDaoImpl implements CityDao {
             return new City(resultSet.getInt(1), name, resultSet.getFloat(2), resultSet.getFloat(3));
         } finally {
             resultSet.close();
+        }
+    }
+
+    @Override
+    public Map<Integer, String> findAllCitiesIdAndName() throws SQLException {
+        try (Connection connection = DbUtil.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(FIND_CITIES_ID_NAME_QUERY)) {
+            HashMap<Integer, String> res = new HashMap<>();
+            while (resultSet.next()) {
+                res.put(resultSet.getInt(1), resultSet.getString(2));
+            }
+            return res;
         }
     }
 }
