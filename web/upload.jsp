@@ -4,7 +4,7 @@
     <title>Send file</title>
 </head>
 <body>
-<form action="send" method="post">
+<form  enctype="multipart/form-data" action="upload" method="post">
     <p>Send xml file</p>
     <input type="file" name="file">
     <br/>

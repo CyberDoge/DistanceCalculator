@@ -12,7 +12,7 @@ public class CityDaoImpl implements CityDao {
     private static final String FIND_CITY_BY_NAME_QUERY =
             "SELECT city_id, latitude, longitude FROM city WHERE name=?";
     private static final String SAVE_CITY_TO_DB_QUERY =
-            "INSERT INTO city VALUES (?, ?, ?)";
+            "INSERT INTO city (name, latitude, longitude) VALUES (?, ?, ?)";
     @Override
     public void save(City city) throws SQLException {
         try (Connection connection = DbUtil.getConnection();
@@ -20,7 +20,7 @@ public class CityDaoImpl implements CityDao {
             statement.setString(1, city.getName());
             statement.setFloat(2, city.getLatitude());
             statement.setFloat(3, city.getLongitude());
-            assert statement.execute();
+            statement.executeUpdate();
         }
     }
 

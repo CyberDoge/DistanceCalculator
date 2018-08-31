@@ -24,51 +24,33 @@ public class UploadFileServiceImpl implements UploadFileService {
     }
 
     @Override
-    public void saveToDb(InputStream inputStream, String name) {
-        if (name.startsWith("city")) {
-            try {
-                for (City city : cityFromXml(inputStream)) {
-                    assert city != null;
-                    cityDao.save(city);
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (JAXBException e) {
-                try {
-                    for (Distance distance : distanceFromXml(inputStream)) {
-                        assert distance != null;
-                        distanceDao.save(distance);
-                    }
-                } catch (JAXBException | SQLException e1) {
-                    e1.printStackTrace();
-                }
+    public void saveToDb(InputStream inputStream) {
+        try {
+            for (City city : citiesFromXml(inputStream)) {
+                assert city != null;
+                cityDao.save(city);
             }
-        } else {
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (JAXBException e) {
+            e.printStackTrace();
+            /*
             try {
                 for (Distance distance : distanceFromXml(inputStream)) {
                     assert distance != null;
                     distanceDao.save(distance);
                 }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (JAXBException e) {
-                try {
-                    for (City city : cityFromXml(inputStream)) {
-                        assert city != null;
-                        cityDao.save(city);
-                    }
-                } catch (JAXBException | SQLException e1) {
-                    e1.printStackTrace();
-                }
-            }
+            } catch (JAXBException | SQLException e1) {
+                e1.printStackTrace();
+            }*/
         }
     }
 
-    private static List<City> cityFromXml(InputStream inputStream) throws JAXBException {
+    private static List<City> citiesFromXml(InputStream inputStream) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Cities.class);
         Unmarshaller un = context.createUnmarshaller();
         Cities cities = (Cities) un.unmarshal(inputStream);
-        return cities.getCities();
+        return cities.cityList;
     }
 
     private static List<Distance> distanceFromXml(InputStream inputStream) throws JAXBException {

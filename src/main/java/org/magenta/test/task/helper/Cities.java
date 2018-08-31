@@ -13,13 +13,8 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Cities {
     @XmlElement(name = "city")
-    private List<City> cities = null;
+    public List<City> cityList;
 
-    public List<City> getCities() {
-        return cities;
-    }
-
-    public void setCities(List<City> cities) {
-        this.cities = cities;
+    public Cities() {
     }
 }

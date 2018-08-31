@@ -11,6 +11,9 @@ public class Distance {
     private String toCity;
     private Integer distance;
 
+    public Distance() {
+    }
+
     @Override
     public String toString() {
         return "Distance{" +

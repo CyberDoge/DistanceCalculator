@@ -6,6 +6,9 @@ public class City {
     private Float latitude;
     private Float longitude;
 
+    public City() {
+    }
+
     public Integer getId() {
         return id;
     }
