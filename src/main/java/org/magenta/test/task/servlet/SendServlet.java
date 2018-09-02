@@ -9,27 +9,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
+import javax.ws.rs.*;
 import java.io.IOException;
 
-@WebServlet("upload")
+@Path("upload")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024,
         maxFileSize = 1024 * 1024 * 5,
         maxRequestSize = 1024 * 1024 * 5 * 5)
-public class SendServlet extends HttpServlet {
+public class SendServlet {
 
     private UploadFileService uploadFileService;
 
-    @Override
     public void init() {
-        uploadFileService = (UploadFileService) getServletContext().getAttribute("uploadFileService");
+//        uploadFileService = (UploadFileService) getServletContext().getAttribute("uploadFileService");
     }
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @GET
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("upload.jsp").forward(req, resp);
     }
 
-    @Override
+
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Part filePart = req.getPart("file");
         uploadFileService.saveToDb(filePart.getInputStream());

@@ -13,9 +13,7 @@ import javax.servlet.annotation.WebListener;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebListener
-public class AppContextListener implements ServletContextListener {
-    @Override
+public class AppContextListener  {
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
             DbUtil.init();
@@ -33,7 +31,6 @@ public class AppContextListener implements ServletContextListener {
 
     }
 
-    @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
         try {
             DbUtil.close();
