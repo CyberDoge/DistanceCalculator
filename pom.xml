@@ -51,11 +51,7 @@
             <artifactId>resteasy-jackson2-provider</artifactId>
             <version>3.6.1.Final</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.jboss.resteasy</groupId>-->
-            <!--<artifactId>resteasy-html</artifactId>-->
-            <!--<version>3.6.1.Final</version>-->
-        <!--</dependency>-->
+
 
     </dependencies>
 

@@ -2,11 +2,10 @@ package org.magenta.test.task.servlet;
 
 import org.magenta.test.task.service.CalculateService;
 
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -18,6 +17,7 @@ import java.util.List;
 
 @Path("calculate")
 public class CalculateServlet {
+
     private CalculateService calculateService;
 
 //    public void init() throws ServletException {
@@ -29,6 +29,7 @@ public class CalculateServlet {
     @Produces("text/html")
     public void openPage(@Context HttpServletRequest httpServletRequest, @Context HttpServletResponse httpServletResponse) throws ServletException, IOException {
         httpServletRequest.getRequestDispatcher("calculate.jsp").forward(httpServletRequest, httpServletResponse);
+
     }
 
     @POST

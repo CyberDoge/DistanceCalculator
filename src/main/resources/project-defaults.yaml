@@ -1,0 +1,5 @@
+swarm:
+  undertow:
+    servlet-containers:
+      default:
+        allow-non-standard-wrappers: no

@@ -3,10 +3,13 @@ package org.magenta.test.task.dao;
 import org.magenta.test.task.entity.City;
 import org.magenta.test.task.util.DbUtil;
 
+import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@Stateless
 public class CityDaoImpl implements CityDao {
     private static final String FIND_CITY_BY_NAME_QUERY =
             "SELECT city_id, latitude, longitude FROM city WHERE name=?";

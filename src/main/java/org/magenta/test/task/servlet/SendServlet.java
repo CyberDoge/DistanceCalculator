@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import java.io.IOException;
 
 @Path("upload")
@@ -25,7 +26,7 @@ public class SendServlet {
     }
 
     @GET
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(@Context HttpServletRequest req, @Context HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("upload.jsp").forward(req, resp);
     }
 

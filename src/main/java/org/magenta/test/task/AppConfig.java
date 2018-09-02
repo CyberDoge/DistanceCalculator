@@ -8,11 +8,11 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@ApplicationPath("/web")
+@ApplicationPath("")
 public class AppConfig extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-        return Stream.of(CitiesServlet.class, CalculateServlet.class).collect(Collectors.toSet());
+        return Stream.of(CitiesServlet.class, CalculateServlet.class, SendServlet.class).collect(Collectors.toSet());
     }
 }
