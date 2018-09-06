@@ -1,17 +1,15 @@
 package org.magenta.test.task.servlet;
 
+import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+import org.magenta.test.task.helper.FileUploadForm;
 import org.magenta.test.task.service.UploadFileService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,9 +32,8 @@ public class UploadServlet {
 
     @POST
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    public void uploadFile(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Part filePart = req.getPart("file");
-        uploadFileService.saveToDb(filePart.getInputStream());
-        resp.setStatus(200);
+    public Response uploadFile(MultipartFormDataInput multipart) throws IOException {
+        uploadFileService.saveToDb(multipart.getFormDataMap().get("file").get(0).getBody(InputStream.class, null));
+        return Response.status(200).build();
     }
 }

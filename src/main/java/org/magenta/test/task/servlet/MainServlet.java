@@ -31,7 +31,7 @@ public class MainServlet {
 
     @GET
     @Produces(MediaType.TEXT_HTML)
-    public InputStream openMainPage() throws IOException, ServletException {
+    public InputStream openMainPage() throws IOException {
         return new FileInputStream(servletContext.getAttribute("basedir") + "/index.html");
     }
 }
