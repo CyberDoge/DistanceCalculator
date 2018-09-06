@@ -3,7 +3,6 @@ package org.magenta.test.task.dao;
 import org.magenta.test.task.entity.City;
 import org.magenta.test.task.util.DbUtil;
 
-import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 import java.sql.*;
 import java.util.HashMap;

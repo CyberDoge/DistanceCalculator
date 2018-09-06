@@ -7,15 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0284ae30-3dc5-4980-8ef8-1ee9ab2484e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/project-defaults.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistanceCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DistanceCalculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project-defaults.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/calculate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upload.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -118,45 +127,68 @@
     <session id="223691897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.109" value="1" />
           <entry key="project.open.time.113" value="1" />
+          <entry key="project.open.time.1594" value="1" />
+          <entry key="project.open.time.175" value="1" />
           <entry key="project.open.time.231" value="1" />
           <entry key="project.open.time.235" value="1" />
           <entry key="project.open.time.437" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.715" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
-          <entry key="java" value="12" />
+          <entry key="class" value="12" />
+          <entry key="html" value="6" />
+          <entry key="java" value="45" />
+          <entry key="jsp" value="4" />
           <entry key="pom" value="1" />
-          <entry key="xml" value="2" />
-          <entry key="yaml" value="2" />
+          <entry key="properties" value="7" />
+          <entry key="sql" value="1" />
+          <entry key="xml" value="6" />
+          <entry key="xsd" value="2" />
+          <entry key="yaml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="12" />
-          <entry key="XML" value="3" />
-          <entry key="YAML" value="2" />
+          <entry key="CLASS" value="12" />
+          <entry key="HTML" value="6" />
+          <entry key="JAVA" value="45" />
+          <entry key="JSP" value="4" />
+          <entry key="Properties" value="7" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="9" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="730" />
-          <entry key="txt" value="80" />
-          <entry key="xml" value="12" />
-          <entry key="yaml" value="8" />
+          <entry key="dummy" value="30" />
+          <entry key="html" value="352" />
+          <entry key="java" value="3352" />
+          <entry key="jsp" value="18" />
+          <entry key="properties" value="21" />
+          <entry key="sql" value="191" />
+          <entry key="txt" value="128" />
+          <entry key="xml" value="50" />
+          <entry key="yaml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="730" />
-          <entry key="PLAIN_TEXT" value="80" />
-          <entry key="XML" value="12" />
-          <entry key="YAML" value="8" />
+          <entry key="HTML" value="352" />
+          <entry key="JAVA" value="3352" />
+          <entry key="JSP" value="18" />
+          <entry key="PLAIN_TEXT" value="158" />
+          <entry key="Properties" value="21" />
+          <entry key="Scratch" value="191" />
+          <entry key="XML" value="50" />
+          <entry key="YAML" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -167,56 +199,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="187">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -225,19 +211,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/project-defaults.yaml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="32" selection-start-line="4" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,8 +234,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="238">
+              <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -257,8 +246,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="102">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/UploadServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="30" column="37" selection-start-line="30" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -266,14 +264,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/util/DbUtil.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -308,15 +303,12 @@
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/City.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/IndexServlet.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/SendFileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateService.java" />
         <option value="$PROJECT_DIR$/web/send.jsp" />
         <option value="$PROJECT_DIR$/web/javascript/index.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/calculate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/SendFileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityService.java" />
         <option value="$PROJECT_DIR$/web/upload.jsp" />
@@ -324,26 +316,36 @@
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/entity/City.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/entity/Distance.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/helper/Cities.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/src/test/java/CityDaoTest.java" />
         <option value="$PROJECT_DIR$/distances.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/helper/Distances.java" />
         <option value="$PROJECT_DIR$/src/test/java/Unmarshalling.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" />
         <option value="$PROJECT_DIR$/cities.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql" />
         <option value="$PROJECT_DIR$/src/test/java/CreateXml.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/target/DistanceCalculator-1.0-SNAPSHOT/calculate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/web/calculate.html" />
+        <option value="$PROJECT_DIR$/web/calculate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/project.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java" />
+        <option value="$PROJECT_DIR$/web/upload.html" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/project-defaults.yaml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.html" />
       </list>
     </option>
   </component>
@@ -378,20 +380,25 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="291" />
-    <option name="y" value="-20" />
-    <option name="width" value="1366" />
-    <option name="height" value="371" />
+    <option name="x" value="472" />
+    <option name="width" value="901" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
         <expanded-state>
           <State />
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Angular</id>
+            <id>JSAnnotator</id>
           </State>
         </selected-state>
       </profile-state>
@@ -405,7 +412,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -446,43 +455,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DistanceCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DistanceCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DistanceCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DistanceCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DistanceCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DistanceCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
               <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DistanceCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DistanceCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DistanceCalculator" type="b2602c69:ProjectViewProjectNode" />
@@ -518,27 +491,32 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535911628263" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536226805326" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Projects\DistanceCalculator" />
+      <recent name="C:\Users\Admin\Desktop\Projects\DistanceCalculator\src\main" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.magenta.test.task" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Projects\DistanceCalculator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -556,7 +534,7 @@
   <component name="RunManager">
     <configuration name="Wildfly 14.0.0" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 14.0.0.Final" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/DistanceCalculator-1.0-SNAPSHOT/" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="DistanceCalculator:war exploded">
           <settings />
@@ -649,7 +627,12 @@
       <workItem from="1535876529380" duration="5956000" />
       <workItem from="1535886999734" duration="5014000" />
       <workItem from="1535896944187" duration="12467000" />
-      <workItem from="1535913413579" duration="3254000" />
+      <workItem from="1535913413579" duration="5106000" />
+      <workItem from="1535965226455" duration="26186000" />
+      <workItem from="1536070833916" duration="17390000" />
+      <workItem from="1536166298501" duration="8046000" />
+      <workItem from="1536221702883" duration="4726000" />
+      <workItem from="1536228751992" duration="4242000" />
     </task>
     <task id="LOCAL-00001" summary="finally fix bug, and start to rebuild to jax rs">
       <created>1535900243102</created>
@@ -658,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535900243102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="continue fixing bugs, and try to add beans">
+      <created>1535918483638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535918483638</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -694,7 +684,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121698000" />
+    <option name="totallyTimeSpent" value="184140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,30 +697,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49859944" visible="true" weight="0.16944024" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49859944" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="4" sideWeight="0.5014006" side_tool="true" weight="0.16717096" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.4744186" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.47433904" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32868218" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3281493" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32868218" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3281493" />
       <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32868218" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32659408" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3281493" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.24727838" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" x="684" y="49" width="681" height="718" id="Debug" order="14" visible="true" weight="0.503888" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3281493" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32659408" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.24727838" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3281493" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3281493" />
+      <window_info anchor="bottom" x="684" y="49" width="681" height="718" id="Debug" order="14" weight="0.3919129" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.3281493" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
@@ -740,11 +731,49 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="Database" order="6" weight="0.21860817" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.15506808" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.27479893" />
       <window_info anchor="right" id="JSF" order="9" weight="0.32980332" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49859944" visible="true" weight="0.24886535" />
+      <window_info id="Structure" order="4" sideWeight="0.5014006" side_tool="true" weight="0.16717096" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.47433904" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3281493" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32868218" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3281493" />
+      <window_info anchor="bottom" id="Tail" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3281493" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32659408" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3281493" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.24727838" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3281493" />
+      <window_info anchor="bottom" x="684" y="49" width="681" height="718" id="Debug" order="14" visible="true" weight="0.34059098" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.3281493" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" weight="0.21860817" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.15506808" />
+      <window_info anchor="right" id="JSF" order="9" weight="0.32980332" />
+      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -754,37 +783,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finally fix bug, and start to rebuild to jax rs" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally fix bug, and start to rebuild to jax rs" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.5.0/commons-dbcp2-2.5.0.jar!/org/apache/commons/dbcp2/DelegatingResultSet.class</url>
-          <line>1849</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="continue fixing bugs, and try to add beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue fixing bugs, and try to add beans" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -800,150 +800,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/ServletRequest.class" />
-    <entry file="file://$PROJECT_DIR$/web/javascript/index.js" />
-    <entry file="file://$PROJECT_DIR$/web/calculate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cities.xml" />
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpServletRequest.class" />
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/ServletRequestWrapper.class" />
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpServletRequestWrapper.class" />
-    <entry file="file://$PROJECT_DIR$/web/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpServlet.class" />
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpServletResponse.class" />
-    <entry file="jar://$USER_HOME$/Soft/wildfly-13.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.2.Final.jar!/javax/servlet/http/HttpServletResponseWrapper.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/entity/Distance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CityDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/helper/Distances.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DistanceCalculator.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://e4db3f8b-6f84-4145-a9e2-7765fca85b7d/schema/distance-calculator/table/city" />
-    <entry file="file://$PROJECT_DIR$/distances.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cities.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Unmarshalling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e4db3f8b-6f84-4145-a9e2-7765fca85b7d/schema/distance-calculator/table/distance" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-jaxrs/3.6.1.Final/resteasy-jaxrs-3.6.1.Final.jar!/org/jboss/resteasy/plugins/server/servlet/HttpServlet30Dispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/resteasy/resteasy-jaxrs/3.6.1.Final/resteasy-jaxrs-3.6.1.Final.jar!/org/jboss/resteasy/core/AsynchronousDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -996,27 +852,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/SendServlet.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="579" column="9" selection-start-line="579" selection-start-column="9" selection-end-line="579" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/net/www/protocol/http/HttpURLConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="772" selection-start-line="772" selection-end-line="772" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/nio/fs/WindowsNativeDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/DistanceCalculator-1.0-SNAPSHOT/calculate.jsp" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/DualStackPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="478" column="36" selection-start-line="478" selection-start-column="36" selection-end-line="478" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/calculate.jsp" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/DistanceCalculator/WEB-INF/classes/org/magenta/test/task/servlet/CalculateServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/http/HttpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12274">
+          <caret line="790" selection-start-line="790" selection-end-line="790" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/util/DbUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="75" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="2222" selection-start-line="2222" selection-end-line="2222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/Unmarshalling.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="maven-properties://Environment.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/lib/maven-model-builder-3.3.9.jar!/org/apache/maven/model/pom-4.0.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="95" column="26" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5576">
+          <caret line="328" column="6" selection-start-line="328" selection-start-column="6" selection-end-line="328" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="maven-properties://System.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/calculate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/upload.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.5.0/commons-dbcp2-2.5.0.jar!/org/apache/commons/dbcp2/DelegatingResultSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1849" selection-start-line="1849" selection-end-line="1849" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/ServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="714" column="26" selection-start-line="714" selection-start-column="26" selection-end-line="714" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/ServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="345" selection-start-line="345" selection-end-line="345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/ServletResponseWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="222" column="20" selection-start-line="222" selection-start-column="20" selection-end-line="222" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/RequestDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/project-defaults.yaml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/project.properties" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/listener/AppContextListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="238">
+          <caret line="20" column="96" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1025,76 +1111,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CalculateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="37" selection-start-line="30" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/util/DbUtil.java">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/project-defaults.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="32" selection-start-line="4" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CalculateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/CityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/CitiesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1117,7 +1152,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Web (DistanceCalculator)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1153,7 +1188,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DistanceCalculator</last-edited>
+          <last-edited>Web|DistanceCalculator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

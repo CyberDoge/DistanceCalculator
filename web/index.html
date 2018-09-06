@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+</head>
+<body>
+<a href="/calculate">calculate</a>
+<br/>
+<a href="/upload">upload file</a>
+<br/>
+<a href="/cities">cities list</a>
+</body>
+<script>
+    (function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, j = links.length; i < j; i++) {
+            var currentHref = links[i].getAttribute('href')
+            links[i].setAttribute('href', window.location.pathname + currentHref);
+        }
+    }());
+</script>
+</html>

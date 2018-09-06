@@ -10,9 +10,13 @@ import java.util.stream.Stream;
 
 @ApplicationPath("")
 public class AppConfig extends Application {
+    private Set<Class<?>> classes;
+    public AppConfig() {
+        classes =  Stream.of(MainServlet.class, CalculateServlet.class, UploadServlet.class).collect(Collectors.toSet());
+    }
 
     @Override
     public Set<Class<?>> getClasses() {
-        return Stream.of(CitiesServlet.class, CalculateServlet.class, SendServlet.class).collect(Collectors.toSet());
+        return classes;
     }
 }

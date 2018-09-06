@@ -1,10 +1,5 @@
 package org.magenta.test.task.listener;
 
-import org.magenta.test.task.dao.CityDao;
-import org.magenta.test.task.dao.CityDaoImpl;
-import org.magenta.test.task.dao.DistanceDao;
-import org.magenta.test.task.dao.DistanceDaoImpl;
-import org.magenta.test.task.service.*;
 import org.magenta.test.task.util.DbUtil;
 
 import javax.servlet.ServletContextEvent;
@@ -13,25 +8,21 @@ import javax.servlet.annotation.WebListener;
 import java.io.IOException;
 import java.sql.SQLException;
 
+@WebListener
+public class AppContextListener implements ServletContextListener {
 
-public class AppContextListener  {
+    @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         try {
             DbUtil.init();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        DistanceDao distanceDao = new DistanceDaoImpl();
-        CityDao cityDao = new CityDaoImpl();
-        CalculateServiceImpl calculateService = new CalculateServiceImpl(distanceDao, cityDao);
-        servletContextEvent.getServletContext().setAttribute("calculateService", calculateService);
-        UploadFileService uploadFileService = new UploadFileServiceImpl(distanceDao, cityDao);
-        servletContextEvent.getServletContext().setAttribute("uploadFileService", uploadFileService);
-        CityService cityService = new CityServiceImpl(cityDao);
-        servletContextEvent.getServletContext().setAttribute("cityService", cityService);
-
+        String path = getClass().getProtectionDomain().getCodeSource().getLocation().toString();
+        servletContextEvent.getServletContext().setAttribute("basedir", path.substring(5, path.lastIndexOf('/', path.lastIndexOf('/') - 1)));
     }
 
+    @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
         try {
             DbUtil.close();

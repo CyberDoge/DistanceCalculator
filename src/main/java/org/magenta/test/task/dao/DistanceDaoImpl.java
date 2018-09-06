@@ -3,11 +3,13 @@ package org.magenta.test.task.dao;
 import org.magenta.test.task.entity.Distance;
 import org.magenta.test.task.util.DbUtil;
 
+import javax.ejb.Stateless;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Stateless
 public class DistanceDaoImpl implements DistanceDao {
     private static final String PREPEAR_DISTANCE_QUERY = "SET @from_city := (SELECT city_id FROM city WHERE name = ?)," +
             " @to_city := (SELECT city_id FROM city WHERE name = ?); ";

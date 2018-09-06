@@ -55,5 +55,25 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <warSourceDirectory>web</warSourceDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
 
+        <resources>
+            <resource>
+                <directory>${basedir}/web</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>

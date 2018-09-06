@@ -7,16 +7,20 @@ import org.magenta.test.task.entity.Distance;
 import org.magenta.test.task.helper.Cities;
 import org.magenta.test.task.helper.Distances;
 
+import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
 import java.sql.SQLException;
 
+@Stateless
 public class UploadFileServiceImpl implements UploadFileService {
     private DistanceDao distanceDao;
     private CityDao cityDao;
 
+    @Inject
     public UploadFileServiceImpl(DistanceDao distanceDao, CityDao cityDao) {
         this.distanceDao = distanceDao;
         this.cityDao = cityDao;
