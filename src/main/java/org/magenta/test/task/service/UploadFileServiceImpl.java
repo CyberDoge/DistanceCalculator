@@ -13,6 +13,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
+import java.sql.Connection;
 import java.sql.SQLException;
 
 @Stateless
@@ -32,17 +33,31 @@ public class UploadFileServiceImpl implements UploadFileService {
         try {
             JAXBContext context = JAXBContext.newInstance(Cities.class, Distances.class);
             Unmarshaller un = context.createUnmarshaller();
-            Object entity =  un.unmarshal(inputStream);
+            Object entity = un.unmarshal(inputStream);
             if (entity instanceof Cities) {
-                for (City city : ((Cities)entity).cityList) {
+                Connection connection = cityDao.openConnectionForSave();
+                for (City city : ((Cities) entity).cityList) {
                     assert city != null;
-                    cityDao.save(city);
+                    try {
+                        cityDao.save(city, connection);
+                    } catch (SQLException e) {
+                        cityDao.closeConnectionForSave(connection, false);
+                        e.printStackTrace();
+                    }
                 }
-            }else if (entity instanceof Distances) {
-                for (Distance distance : ((Distances)entity).distanceList) {
+                cityDao.closeConnectionForSave(connection, true);
+            } else if (entity instanceof Distances) {
+                Connection connection = distanceDao.openConnectionForSave();
+                for (Distance distance : ((Distances) entity).distanceList) {
                     assert distance != null;
-                    distanceDao.save(distance);
+                    try {
+                        distanceDao.save(distance, connection);
+                    } catch (SQLException e) {
+                        distanceDao.closeConnectionForSave(connection, false);
+                        e.printStackTrace();
+                    }
                 }
+                distanceDao.closeConnectionForSave(connection, false);
             } else throw new JAXBException("Not valid entity");
         } catch (SQLException | JAXBException e) {
             e.printStackTrace();

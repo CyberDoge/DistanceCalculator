@@ -5,6 +5,9 @@ import org.magenta.test.task.dao.CityDaoImpl;
 import org.magenta.test.task.entity.City;
 import org.magenta.test.task.util.DbUtil;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CityDaoTest {
@@ -13,8 +16,10 @@ public class CityDaoTest {
         assertDoesNotThrow(()->DbUtil.init());
     }
     @Test
-    public void save(){
+    public void save() throws SQLException {
         CityDao cityDao = new CityDaoImpl();
-        assertDoesNotThrow(()->cityDao.save(new City(228, "LLMM", 0.2f, 0.3f)));
+        Connection connection = cityDao.openConnectionForSave();
+        assertDoesNotThrow(()->cityDao.save(new City(228, "LLMM", 0.2f, 0.3f),connection));
+        connection.close();
     }
 }

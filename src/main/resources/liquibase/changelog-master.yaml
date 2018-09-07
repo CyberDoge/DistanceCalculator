@@ -1,0 +1,47 @@
+databaseChangeLog:
+- preConditions:
+  - runningAs:
+      username: root
+
+- changeSet:
+    id: 1
+    author: root
+    changes:
+    - createTable:
+        tableName: City
+        columns:
+        - column:
+            name: city_id
+            type: int
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              nullable: false
+        - column:
+            name: Name
+            type: varchar(50)
+            constraints:
+              unique: true
+        - column:
+            name: Latitude
+            type: DECIMAL(9, 6)
+          - column:
+            name: Longitude
+            type: DECIMAL(9, 6)
+
+- changeSet:
+    id: 2
+    author: root
+    changes:
+    - addColumn:
+        tableName: Distance
+        columns:
+        - column:
+            name: from_city
+            type: int
+        - column:
+            name: to_city
+            type: int
+        - column:
+            name: distance
+            type: int

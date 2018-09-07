@@ -41,13 +41,24 @@ public class DistanceDaoImpl implements DistanceDao {
     }
 
     @Override
-    public void save(Distance distance) throws SQLException {
-        try (Connection connection = DbUtil.getConnection();
-             PreparedStatement statement = connection.prepareStatement(SAVE_DISTANCE_TO_DB_QUERY)) {
+    public void save(Distance distance, Connection connection) throws SQLException {
+        try (PreparedStatement statement = connection.prepareStatement(SAVE_DISTANCE_TO_DB_QUERY)) {
             statement.setString(1, distance.getFromCity());
             statement.setString(2, distance.getToCity());
             statement.setInt(3, distance.getDistance());
             statement.executeUpdate();
         }
+    }
+
+    @Override
+    public Connection openConnectionForSave() throws SQLException {
+        return DbUtil.getConnection();
+    }
+
+    @Override
+    public void closeConnectionForSave(Connection connection, boolean suc) throws SQLException {
+        assert connection != null;
+        if (!suc) connection.rollback();
+        connection.close();
     }
 }

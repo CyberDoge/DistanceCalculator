@@ -18,9 +18,8 @@ public class CityDaoImpl implements CityDao {
             "SELECT city_id, name FROM city";
 
     @Override
-    public void save(City city) throws SQLException {
-        try (Connection connection = DbUtil.getConnection();
-             PreparedStatement statement = connection.prepareStatement(SAVE_CITY_TO_DB_QUERY)) {
+    public void save(City city, Connection connection) throws SQLException {
+        try (PreparedStatement statement = connection.prepareStatement(SAVE_CITY_TO_DB_QUERY)) {
             statement.setString(1, city.getName());
             statement.setFloat(2, city.getLatitude());
             statement.setFloat(3, city.getLongitude());
@@ -54,5 +53,18 @@ public class CityDaoImpl implements CityDao {
             }
             return res;
         }
+    }
+
+    @Override
+    public Connection openConnectionForSave() throws SQLException {
+        return DbUtil.getConnection();
+    }
+
+    @Override
+    public void closeConnectionForSave(Connection connection, boolean suc) throws SQLException {
+        assert connection != null;
+        if (!suc)
+            connection.rollback();
+        connection.close();
     }
 }
