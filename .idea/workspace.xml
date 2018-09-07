@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0284ae30-3dc5-4980-8ef8-1ee9ab2484e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CityDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CityDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,37 +126,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="12" />
+          <entry key="class" value="13" />
           <entry key="html" value="6" />
           <entry key="java" value="60" />
           <entry key="jsp" value="4" />
           <entry key="pom" value="1" />
-          <entry key="properties" value="9" />
+          <entry key="properties" value="10" />
           <entry key="sql" value="6" />
           <entry key="xml" value="8" />
           <entry key="xsd" value="2" />
-          <entry key="yaml" value="5" />
+          <entry key="yaml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="12" />
+          <entry key="CLASS" value="13" />
           <entry key="HTML" value="6" />
           <entry key="JAVA" value="60" />
           <entry key="JSP" value="4" />
-          <entry key="Properties" value="9" />
+          <entry key="Properties" value="10" />
           <entry key="Scratch" value="6" />
           <entry key="XML" value="11" />
-          <entry key="YAML" value="5" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="30" />
           <entry key="html" value="355" />
-          <entry key="java" value="4100" />
+          <entry key="java" value="4107" />
           <entry key="jsp" value="18" />
-          <entry key="properties" value="21" />
+          <entry key="properties" value="25" />
           <entry key="sql" value="408" />
           <entry key="txt" value="172" />
           <entry key="xml" value="115" />
@@ -175,10 +166,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="355" />
-          <entry key="JAVA" value="4100" />
+          <entry key="JAVA" value="4107" />
           <entry key="JSP" value="18" />
           <entry key="PLAIN_TEXT" value="202" />
-          <entry key="Properties" value="21" />
+          <entry key="Properties" value="25" />
           <entry key="Scratch" value="408" />
           <entry key="XML" value="115" />
           <entry key="YAML" value="113" />
@@ -203,13 +194,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+            <state relative-caret-position="216">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -221,8 +212,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-583">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="-272">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -303,7 +312,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/UploadServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yaml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/DistanceDao.java" />
@@ -312,6 +320,7 @@
         <option value="$PROJECT_DIR$/src/test/java/CityDaoTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e4db3f8b-6f84-4145-a9e2-7765fca85b7d/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" />
       </list>
     </option>
   </component>
@@ -482,8 +491,8 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536316913286" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536317135728" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -618,7 +627,7 @@
       <workItem from="1536166298501" duration="8046000" />
       <workItem from="1536221702883" duration="4726000" />
       <workItem from="1536228751992" duration="6503000" />
-      <workItem from="1536252143138" duration="23103000" />
+      <workItem from="1536252143138" duration="23349000" />
     </task>
     <task id="LOCAL-00001" summary="finally fix bug, and start to rebuild to jax rs">
       <created>1535900243102</created>
@@ -677,7 +686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209504000" />
+    <option name="totallyTimeSpent" value="209750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,12 +704,12 @@
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49859944" visible="true" weight="0.21028744" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49859944" visible="true" weight="0.21028744" />
       <window_info id="Structure" order="4" sideWeight="0.5014006" side_tool="true" weight="0.16717096" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.47433904" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.47433904" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3281493" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32868218" />
@@ -709,7 +718,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3281493" />
       <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3281493" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32659408" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32659408" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24727838" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3281493" />
@@ -797,12 +806,6 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java</url>
           <line>62</line>
           <properties />
@@ -832,13 +835,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/helper/Cities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/nio/file/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -1096,20 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/servlet/MainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -1155,17 +1137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-583">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/service/UploadFileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        <state relative-caret-position="216">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
@@ -1173,6 +1148,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.5.0/commons-dbcp2-2.5.0.jar!/org/apache/commons/dbcp2/DelegatingStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/magenta/test/task/dao/CityDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
